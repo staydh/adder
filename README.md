@@ -40,4 +40,4 @@ Exportar formas de ondas: `ghdl --wave=wave.ghw`
 
 ### gtkwave
 
-Analizar formas de ondas: `gtkwave wave.ghw`
+Analisar formas de ondas: `gtkwave wave.ghw`
