@@ -1,0 +1,40 @@
+OpenROAD 0.9.0 d03ebfc244
+This program is licensed under the BSD-3 license. See the LICENSE file for details. 
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Error: cannot open '/root/.openroad'.
+Notice 0: Reading LEF file:  /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 438 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/placement/openphysyn.def
+Notice 0: Design: adder
+Notice 0:     Created 28 pins.
+Notice 0:     Created 280 components and 1067 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 87 nets and 219 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/placement/openphysyn.def
+Design Stats
+--------------------------------
+total instances           280
+multi row instances         0
+fixed instances           210
+nets                       89
+design area           10369.9 u^2
+fixed area              447.9 u^2
+movable area            713.2 u^2
+utilization                 7 %
+utilization padded         14 %
+rows                       37
+row height                2.7 u
+
+Placement Analysis
+--------------------------------
+total displacement      532.0 u
+average displacement      1.9 u
+max displacement         18.3 u
+original HPWL          1870.8 u
+legalized HPWL         2451.4 u
+delta HPWL                 31 %
+

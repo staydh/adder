@@ -1,0 +1,21 @@
+
+22. Printing statistics.
+
+=== adder ===
+
+   Number of wires:                 30
+   Number of wire bits:             51
+   Number of public wires:           5
+   Number of public wire bits:      26
+   Number of memories:               0
+   Number of memory bits:            0
+   Number of processes:              0
+   Number of cells:                 34
+     sky130_fd_sc_hd__a2bb2o_4      15
+     sky130_fd_sc_hd__and2_4         8
+     sky130_fd_sc_hd__inv_2          2
+     sky130_fd_sc_hd__o21a_4         1
+     sky130_fd_sc_hd__o22a_4         8
+
+   Chip area for module '\adder': 533.011200
+

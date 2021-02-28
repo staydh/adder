@@ -1,0 +1,239 @@
+[
+  {
+   "pins": [
+      [
+        "A1_N",
+        "A2_N",
+        "B1",
+        "B2",
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR",
+        "X"
+      ], [
+        "A1_N",
+        "A2_N",
+        "B1",
+        "B2",
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR",
+        "X"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "VGND",
+        "VPWR"
+      ], [
+        "VGND",
+        "VPWR"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR",
+        "X"
+      ], [
+        "A1",
+        "A2",
+        "B1",
+        "B2",
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR",
+        "X"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "B",
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR",
+        "X"
+      ], [
+        "A",
+        "B",
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR",
+        "X"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR",
+        "X"
+      ], [
+        "A",
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR",
+        "X"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A1",
+        "A2",
+        "B1",
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR",
+        "X"
+      ], [
+        "A1",
+        "A2",
+        "B1",
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR",
+        "X"
+      ]
+   ]
+  },
+  {
+   "pins": [
+      [
+        "A",
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR",
+        "Y"
+      ], [
+        "A",
+        "VGND",
+        "VNB",
+        "VPB",
+        "VPWR",
+        "Y"
+      ]
+   ]
+  },
+  {
+   "name": [
+      "adder",
+      "adder"
+   ],
+   "devices": [
+       [
+         ["sky130_fd_sc_hd__a2bb2o_4", 15],
+         ["sky130_fd_sc_hd__tapvpwrvgnd_1", 136],
+         ["sky130_fd_sc_hd__o22a_4", 8],
+         ["sky130_fd_sc_hd__and2_4", 8],
+         ["sky130_fd_sc_hd__buf_2", 36],
+         ["sky130_fd_sc_hd__o21a_4", 1],
+         ["sky130_fd_sc_hd__inv_2", 2 ]
+       ], [
+         ["sky130_fd_sc_hd__a2bb2o_4", 15 ],
+         ["sky130_fd_sc_hd__tapvpwrvgnd_1", 136 ],
+         ["sky130_fd_sc_hd__o22a_4", 8 ],
+         ["sky130_fd_sc_hd__and2_4", 8 ],
+         ["sky130_fd_sc_hd__buf_2", 36 ],
+         ["sky130_fd_sc_hd__o21a_4", 1 ],
+         ["sky130_fd_sc_hd__inv_2", 2 ]
+       ]
+   ],
+   "nets": [
+    89,
+    89
+   ],
+   "badnets": [
+   ],
+   "badelements": [
+   ],
+   "pins": [
+      [
+        "s[4]",
+        "s[5]",
+        "s[6]",
+        "co",
+        "s[7]",
+        "s[1]",
+        "s[3]",
+        "s[0]",
+        "s[2]",
+        "ci",
+        "i0[0]",
+        "i1[0]",
+        "i1[3]",
+        "i0[3]",
+        "i0[2]",
+        "i0[1]",
+        "i1[2]",
+        "i1[1]",
+        "i1[4]",
+        "i1[5]",
+        "i1[6]",
+        "i0[4]",
+        "i0[5]",
+        "i0[6]",
+        "i0[7]",
+        "i1[7]",
+        "VGND",
+        "VPWR"
+      ], [
+        "s[4]",
+        "s[5]",
+        "s[6]",
+        "co",
+        "s[7]",
+        "s[1]",
+        "s[3]",
+        "s[0]",
+        "s[2]",
+        "ci",
+        "i0[0]",
+        "i1[0]",
+        "i1[3]",
+        "i0[3]",
+        "i0[2]",
+        "i0[1]",
+        "i1[2]",
+        "i1[1]",
+        "i1[4]",
+        "i1[5]",
+        "i1[6]",
+        "i0[4]",
+        "i0[5]",
+        "i0[6]",
+        "i0[7]",
+        "i1[7]",
+        "VGND",
+        "VPWR"
+      ]
+   ]
+  }
+]

@@ -1,0 +1,137 @@
+[OpenPhySyn] [2021-02-28 17:09:47.748] [info] Loaded 6 transforms.
+[OpenPhySyn] [2021-02-28 17:09:48.737] [info] OpenPhySyn: 1.8.1
+Warning: /openLANE_flow/designs/adder/runs/opelane_run/tmp/opt.lib, line 32 default_operating_condition ss_100C_1v60 not found.
+Notice 0: Reading LEF file:  /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 438 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/placement/replace.def
+Notice 0: Design: adder
+Notice 0:     Created 28 pins.
+Notice 0:     Created 244 components and 851 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 51 nets and 147 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/placement/replace.def
+Warning: base.sdc, 1 port 'clk' not found.
+[INFO]: Setting output delay to: 0.0
+[INFO]: Setting input delay to: 0.0
+Warning: base.sdc, 8 port 'clk' not found.
+[INFO]: Setting load to: 0.01765
+=============== Initial Reports =============
+Startpoint: i1[0] (input port clocked by clk)
+Endpoint: s[7] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 v input external delay
+   0.01    0.01 v i1[0] (in)
+   0.27    0.28 v _28_/X (sky130_fd_sc_hd__and2_4)
+   0.39    0.67 v _29_/X (sky130_fd_sc_hd__o22a_4)
+   0.42    1.09 v _30_/X (sky130_fd_sc_hd__o22a_4)
+   0.44    1.53 v _31_/X (sky130_fd_sc_hd__o22a_4)
+   0.42    1.95 v _35_/X (sky130_fd_sc_hd__o22a_4)
+   0.41    2.36 v _39_/X (sky130_fd_sc_hd__o22a_4)
+   0.41    2.77 v _43_/X (sky130_fd_sc_hd__o22a_4)
+   0.41    3.18 v _47_/X (sky130_fd_sc_hd__o22a_4)
+   0.47    3.65 ^ _50_/X (sky130_fd_sc_hd__a2bb2o_4)
+   0.00    3.65 ^ s[7] (out)
+           3.65   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+   0.00    0.00   output external delay
+           0.00   data required time
+---------------------------------------------------------
+           0.00   data required time
+          -3.65   data arrival time
+---------------------------------------------------------
+          -3.65   slack (VIOLATED)
+
+
+Capacitance violations: 0
+Transition violations: 0
+wns -3.65
+tns -21.40
+Initial area: 9809 um2
+OpenPhySyn timing repair:
+[OpenPhySyn] [2021-02-28 17:09:49.217] [info] Invoking repair_timing transform
+[OpenPhySyn] [2021-02-28 17:09:49.228] [info] Buffer library: sky130_fd_sc_hd__buf_2, sky130_fd_sc_hd__buf_4, sky130_fd_sc_hd__buf_8
+[OpenPhySyn] [2021-02-28 17:09:49.228] [info] Inverter library: None
+[OpenPhySyn] [2021-02-28 17:09:49.228] [info] Buffering: enabled
+[OpenPhySyn] [2021-02-28 17:09:49.228] [info] Driver sizing: enabled
+[OpenPhySyn] [2021-02-28 17:09:49.228] [info] Pin-swapping: enabled
+[OpenPhySyn] [2021-02-28 17:09:49.228] [info] Mode: Timing-Driven
+[OpenPhySyn] [2021-02-28 17:09:49.228] [info] Iteration 1
+[OpenPhySyn] [2021-02-28 17:09:49.251] [info] Found 9 negative slack paths
+[OpenPhySyn] [2021-02-28 17:09:49.251] [warning] Top-level
+[OpenPhySyn] [2021-02-28 17:09:49.321] [warning] Top-level
+[OpenPhySyn] [2021-02-28 17:09:49.384] [warning] Top-level
+[OpenPhySyn] [2021-02-28 17:09:49.435] [warning] Top-level
+[OpenPhySyn] [2021-02-28 17:09:49.479] [warning] Top-level
+[OpenPhySyn] [2021-02-28 17:09:49.517] [warning] Top-level
+[OpenPhySyn] [2021-02-28 17:09:49.547] [warning] Top-level
+[OpenPhySyn] [2021-02-28 17:09:49.572] [warning] Top-level
+[OpenPhySyn] [2021-02-28 17:09:49.593] [warning] Top-level
+[OpenPhySyn] [2021-02-28 17:09:49.625] [info] Runtime: 0s
+[OpenPhySyn] [2021-02-28 17:09:49.625] [info] Buffers: 36
+[OpenPhySyn] [2021-02-28 17:09:49.625] [info] Resize up: 0
+[OpenPhySyn] [2021-02-28 17:09:49.625] [info] Resize down: 0
+[OpenPhySyn] [2021-02-28 17:09:49.625] [info] Pin Swap: 3
+[OpenPhySyn] [2021-02-28 17:09:49.625] [info] Buffered nets: 32
+[OpenPhySyn] [2021-02-28 17:09:49.625] [info] Fanout violations: 0
+[OpenPhySyn] [2021-02-28 17:09:49.625] [info] Transition violations: 0
+[OpenPhySyn] [2021-02-28 17:09:49.625] [info] Capacitance violations: 0
+[OpenPhySyn] [2021-02-28 17:09:49.625] [info] Slack gain: 1.1151e-08
+[OpenPhySyn] [2021-02-28 17:09:49.625] [info] Initial area: 981
+[OpenPhySyn] [2021-02-28 17:09:49.625] [info] New area: 1161
+[OpenPhySyn] [2021-02-28 17:09:49.626] [info] Finished repair_timing transform (39)
+Added/updated 39 cells
+=============== Final Reports =============
+Startpoint: i1[0] (input port clocked by clk)
+Endpoint: s[7] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 v input external delay
+   0.01    0.01 v i1[0] (in)
+   0.26    0.27 v _28_/X (sky130_fd_sc_hd__and2_4)
+   0.36    0.63 v _29_/X (sky130_fd_sc_hd__o22a_4)
+   0.38    1.01 v _30_/X (sky130_fd_sc_hd__o22a_4)
+   0.40    1.40 v _31_/X (sky130_fd_sc_hd__o22a_4)
+   0.38    1.78 v _35_/X (sky130_fd_sc_hd__o22a_4)
+   0.38    2.17 v _39_/X (sky130_fd_sc_hd__o22a_4)
+   0.37    2.54 v _43_/X (sky130_fd_sc_hd__o22a_4)
+   0.40    2.94 v _47_/X (sky130_fd_sc_hd__o22a_4)
+   0.46    3.40 v _50_/X (sky130_fd_sc_hd__a2bb2o_4)
+   0.00    3.40 v s[7] (out)
+           3.40   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+   0.00    0.00   output external delay
+           0.00   data required time
+---------------------------------------------------------
+           0.00   data required time
+          -3.40   data arrival time
+---------------------------------------------------------
+          -3.40   slack (VIOLATED)
+
+
+Capacitance violations: 0
+Transition violations: 0
+wns -3.40
+tns -26.71
+Final area: 11611 um2
+Export optimized design

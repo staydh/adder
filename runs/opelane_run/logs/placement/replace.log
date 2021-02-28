@@ -1,0 +1,116 @@
+OpenROAD 0.9.0 d03ebfc244
+This program is licensed under the BSD-3 license. See the LICENSE file for details. 
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Error: cannot open '/root/.openroad'.
+Notice 0: Reading LEF file:  /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 438 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/floorplan/pdn.def
+Notice 0: Design: adder
+Notice 0:     Created 28 pins.
+Notice 0:     Created 244 components and 851 component-terminals.
+Notice 0:     Created 2 special nets and 0 connections.
+Notice 0:     Created 51 nets and 147 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/floorplan/pdn.def
+[INFO] DBU = 1000
+[INFO] SiteSize = (460, 2720)
+[INFO] CoreAreaLxLy = (5520, 10880)
+[INFO] CoreAreaUxUy = (108560, 111520)
+[INFO] NumInstances = 244
+[INFO] NumPlaceInstances = 34
+[INFO] NumFixedInstances = 210
+[INFO] NumDummyInstances = 0
+[INFO] NumNets = 51
+[INFO] NumPins = 173
+[INFO] DieAreaLxLy = (0, 0)
+[INFO] DieAreaUxUy = (114290, 125010)
+[INFO] CoreAreaLxLy = (5520, 10880)
+[INFO] CoreAreaUxUy = (108560, 111520)
+[INFO] CoreArea = 10369945600
+[INFO] NonPlaceInstsArea = 447929600
+[INFO] PlaceInstsArea = 533011200
+[INFO] Util(%) = 5.372005
+[INFO] StdInstsArea = 533011200
+[INFO] MacroInstsArea = 0
+[InitialPlace]  Iter: 1 CG Error: 1.00965e-07 HPWL: 3422840
+[InitialPlace]  Iter: 2 CG Error: 5.31134e-08 HPWL: 2519497
+[InitialPlace]  Iter: 3 CG Error: 8.27359e-08 HPWL: 2357556
+[InitialPlace]  Iter: 4 CG Error: 1.03291e-07 HPWL: 2243945
+[InitialPlace]  Iter: 5 CG Error: 8.83327e-08 HPWL: 2175068
+[INFO] FillerInit: NumGCells = 314
+[INFO] FillerInit: NumGNets = 51
+[INFO] FillerInit: NumGPins = 173
+[INFO] TargetDensity = 0.500000
+[INFO] AveragePlaceInstArea = 15676800
+[INFO] IdealBinArea = 31353600
+[INFO] IdealBinCnt = 330
+[INFO] TotalBinArea = 10369945600
+[INFO] BinCnt = (16, 16)
+[INFO] BinSize = (6440, 6290)
+[INFO] NumBins = 256
+[NesterovSolve] Iter: 1 overflow: 0.256472 HPWL: 1828740
+[NesterovSolve] Iter: 10 overflow: 0.240321 HPWL: 1805224
+[NesterovSolve] Iter: 20 overflow: 0.236201 HPWL: 1809203
+[NesterovSolve] Iter: 30 overflow: 0.23574 HPWL: 1809136
+[NesterovSolve] Iter: 40 overflow: 0.234625 HPWL: 1807283
+[NesterovSolve] Iter: 50 overflow: 0.234644 HPWL: 1806656
+[NesterovSolve] Iter: 60 overflow: 0.235328 HPWL: 1806921
+[NesterovSolve] Iter: 70 overflow: 0.234402 HPWL: 1807264
+[NesterovSolve] Iter: 80 overflow: 0.234833 HPWL: 1807446
+[NesterovSolve] Iter: 90 overflow: 0.235085 HPWL: 1807542
+[NesterovSolve] Iter: 100 overflow: 0.234697 HPWL: 1807476
+[NesterovSolve] Iter: 110 overflow: 0.234714 HPWL: 1807525
+[NesterovSolve] Iter: 120 overflow: 0.234773 HPWL: 1807649
+[NesterovSolve] Iter: 130 overflow: 0.234737 HPWL: 1807911
+[NesterovSolve] Iter: 140 overflow: 0.23481 HPWL: 1808275
+[NesterovSolve] Iter: 150 overflow: 0.234815 HPWL: 1808687
+[NesterovSolve] Iter: 160 overflow: 0.234838 HPWL: 1808998
+[NesterovSolve] Iter: 170 overflow: 0.234626 HPWL: 1808789
+[NesterovSolve] Iter: 180 overflow: 0.234294 HPWL: 1808188
+[NesterovSolve] Iter: 190 overflow: 0.234298 HPWL: 1808120
+[NesterovSolve] Iter: 200 overflow: 0.234363 HPWL: 1808501
+[NesterovSolve] Iter: 210 overflow: 0.234345 HPWL: 1807868
+[NesterovSolve] Iter: 220 overflow: 0.234088 HPWL: 1808378
+[NesterovSolve] Iter: 230 overflow: 0.233165 HPWL: 1808206
+[NesterovSolve] Iter: 240 overflow: 0.232402 HPWL: 1808653
+[NesterovSolve] Iter: 250 overflow: 0.232324 HPWL: 1809168
+[NesterovSolve] Iter: 260 overflow: 0.231106 HPWL: 1809738
+[NesterovSolve] Iter: 270 overflow: 0.228801 HPWL: 1809902
+[NesterovSolve] Iter: 280 overflow: 0.22557 HPWL: 1810311
+[NesterovSolve] Iter: 290 overflow: 0.218073 HPWL: 1810699
+[NesterovSolve] Iter: 300 overflow: 0.210544 HPWL: 1810378
+[NesterovSolve] Iter: 310 overflow: 0.197302 HPWL: 1809599
+[NesterovSolve] Iter: 320 overflow: 0.182294 HPWL: 1808823
+[NesterovSolve] Iter: 330 overflow: 0.16044 HPWL: 1811872
+[NesterovSolve] Iter: 340 overflow: 0.134897 HPWL: 1812173
+[NesterovSolve] Iter: 350 overflow: 0.109138 HPWL: 1810830
+[NesterovSolve] Finished with Overflow: 0.0975513
+Warning: /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, line 32 default_operating_condition ss_100C_1v60 not found.
+Warning: /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib, line 31 default_operating_condition ff_n40C_1v95 not found.
+create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
+Warning: base.sdc, 1 port 'clk' not found.
+set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+set output_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
+puts "\[INFO\]: Setting output delay to: $output_delay_value"
+[INFO]: Setting output delay to: 0.0
+puts "\[INFO\]: Setting input delay to: $input_delay_value"
+[INFO]: Setting input delay to: 0.0
+set clk_indx [lsearch [all_inputs] [get_port $::env(CLOCK_PORT)]]
+Warning: base.sdc, 8 port 'clk' not found.
+#set rst_indx [lsearch [all_inputs] [get_port resetn]]
+set all_inputs_wo_clk [lreplace [all_inputs] $clk_indx $clk_indx]
+#set all_inputs_wo_clk_rst [lreplace $all_inputs_wo_clk $rst_indx $rst_indx]
+set all_inputs_wo_clk_rst $all_inputs_wo_clk
+# correct resetn
+set_input_delay $input_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] $all_inputs_wo_clk_rst
+#set_input_delay 0.0 -clock [get_clocks $::env(CLOCK_PORT)] {resetn}
+set_output_delay $output_delay_value  -clock [get_clocks $::env(CLOCK_PORT)] [all_outputs]
+# TODO set this as parameter
+set_driving_cell -lib_cell $::env(SYNTH_DRIVING_CELL) -pin $::env(SYNTH_DRIVING_CELL_PIN) [all_inputs]
+set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
+puts "\[INFO\]: Setting load to: $cap_load"
+[INFO]: Setting load to: 0.01765
+set_load  $cap_load [all_outputs]

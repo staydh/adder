@@ -1,0 +1,19 @@
+Design Name: adder
+Run Directory: /openLANE_flow/designs/adder/runs/opelane_run
+----------------------------------------
+
+Magic DRC Summary:
+Source: /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic.drc
+Total Magic DRC violations is 0
+----------------------------------------
+
+LVS Summary:
+Source: /openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs_parsed.log
+LVS reports no net, device, pin, or property mismatches.
+Total errors = 0
+----------------------------------------
+
+Antenna Summary:
+Source: /openLANE_flow/designs/adder/runs/opelane_run/reports/routing/antenna.rpt
+Number of pins violated: 0
+Number of nets violated: 0

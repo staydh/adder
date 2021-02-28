@@ -1,0 +1,102 @@
+
+ /----------------------------------------------------------------------------\
+ |                                                                            |
+ |  yosys -- Yosys Open SYnthesis Suite                                       |
+ |                                                                            |
+ |  Copyright (C) 2012 - 2020  Claire Wolf <claire@symbioticeda.com>          |
+ |                                                                            |
+ |  Permission to use, copy, modify, and/or distribute this software for any  |
+ |  purpose with or without fee is hereby granted, provided that the above    |
+ |  copyright notice and this permission notice appear in all copies.         |
+ |                                                                            |
+ |  THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES  |
+ |  WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF          |
+ |  MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR   |
+ |  ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES    |
+ |  WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN     |
+ |  ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF   |
+ |  OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.            |
+ |                                                                            |
+ \----------------------------------------------------------------------------/
+
+ Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
+
+[TCL: yosys -import] Command name collision: found pre-existing command `cd' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `eval' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `exec' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `read' -> skip.
+[TCL: yosys -import] Command name collision: found pre-existing command `trace' -> skip.
+
+1. Executing Verilog-2005 frontend: /openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v
+Parsing Verilog input from `/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v' to AST representation.
+Generating RTLIL representation for module `\adder'.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:20: Warning: Identifier `\_00_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:27: Warning: Identifier `\_01_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:34: Warning: Identifier `\_02_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:41: Warning: Identifier `\_03_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:50: Warning: Identifier `\_04_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:59: Warning: Identifier `\_05_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:68: Warning: Identifier `\_06_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:74: Warning: Identifier `\psn_net_6' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:86: Warning: Identifier `\_07_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:93: Warning: Identifier `\_08_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:102: Warning: Identifier `\_09_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:108: Warning: Identifier `\psn_net_4' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:110: Warning: Identifier `\psn_net_5' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:120: Warning: Identifier `\_10_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:127: Warning: Identifier `\_11_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:136: Warning: Identifier `\_12_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:142: Warning: Identifier `\psn_net_2' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:144: Warning: Identifier `\psn_net_3' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:154: Warning: Identifier `\_13_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:161: Warning: Identifier `\_14_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:170: Warning: Identifier `\_15_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:176: Warning: Identifier `\psn_net_0' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:178: Warning: Identifier `\psn_net_1' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:186: Warning: Identifier `\_16_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:193: Warning: Identifier `\_17_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:202: Warning: Identifier `\_18_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:220: Warning: Identifier `\_19_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:235: Warning: Identifier `\_20_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:240: Warning: Identifier `\psn_net_10' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:241: Warning: Identifier `\_21_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:249: Warning: Identifier `\_22_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:267: Warning: Identifier `\_23_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:273: Warning: Identifier `\psn_net_9' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:274: Warning: Identifier `\psn_net_8' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:285: Warning: Identifier `\_24_' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:291: Warning: Identifier `\psn_net_7' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:891: Warning: Identifier `\psn_net_11' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:909: Warning: Identifier `\psn_net_12' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:915: Warning: Identifier `\psn_net_13' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:927: Warning: Identifier `\psn_net_14' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:933: Warning: Identifier `\psn_net_15' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:939: Warning: Identifier `\psn_net_16' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:945: Warning: Identifier `\psn_net_17' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:951: Warning: Identifier `\psn_net_18' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:957: Warning: Identifier `\psn_net_19' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:963: Warning: Identifier `\psn_net_20' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:969: Warning: Identifier `\psn_net_21' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:975: Warning: Identifier `\psn_net_22' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:981: Warning: Identifier `\psn_net_23' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:987: Warning: Identifier `\psn_net_24' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:993: Warning: Identifier `\psn_net_25' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:999: Warning: Identifier `\psn_net_26' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:1011: Warning: Identifier `\psn_net_27' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:1017: Warning: Identifier `\psn_net_28' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:1023: Warning: Identifier `\psn_net_29' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:1029: Warning: Identifier `\psn_net_30' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:1035: Warning: Identifier `\psn_net_31' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:1041: Warning: Identifier `\psn_net_32' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:1053: Warning: Identifier `\psn_net_33' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:1059: Warning: Identifier `\psn_net_34' is implicitly declared.
+/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v:1071: Warning: Identifier `\psn_net_35' is implicitly declared.
+Successfully finished Verilog frontend.
+
+2. Executing Verilog backend.
+Dumping module `\adder'.
+
+Warnings: 61 unique messages, 61 total
+End of script. Logfile hash: 10ea8a027b, CPU: user 1.51s system 0.01s, MEM: 16.76 MB peak
+Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
+Time spent: 83% 2x write_verilog (1 sec), 16% 2x read_verilog (0 sec)

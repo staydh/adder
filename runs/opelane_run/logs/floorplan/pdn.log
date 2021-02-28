@@ -1,0 +1,35 @@
+OpenROAD 0.9.0 d03ebfc244
+This program is licensed under the BSD-3 license. See the LICENSE file for details. 
+Components of this program may be licensed under more restrictive licenses which must be honored.
+Error: cannot open '/root/.openroad'.
+Notice 0: Reading LEF file:  /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged_unpadded.lef
+Notice 0:     Created 13 technology layers
+Notice 0:     Created 25 technology vias
+Notice 0:     Created 438 library cells
+Notice 0: Finished LEF file:  /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged_unpadded.lef
+Notice 0: 
+Reading DEF file: /openLANE_flow/designs/adder/runs/opelane_run/results/floorplan/adder.floorplan.def
+Notice 0: Design: adder
+Notice 0:     Created 26 pins.
+Notice 0:     Created 244 components and 851 component-terminals.
+Notice 0:     Created 51 nets and 147 connections.
+Notice 0: Finished DEF file: /openLANE_flow/designs/adder/runs/opelane_run/results/floorplan/adder.floorplan.def
+[INFO] [PDNG-0016] Power Delivery Network Generator: Generating PDN
+[INFO] [PDNG-0016]   config: /edatools/pdks/sky130A/libs.tech/openlane/common_pdn.tcl
+[INFO] [PDNG-0008] Design Name is adder
+[INFO] [PDNG-0009] Reading technology data
+[INFO] [PDNG-0011] ****** INFO ******
+Type: stdcell, grid
+    Stdcell Rails
+      Layer: met1 -  width: 0.480  pitch: 2.720  offset: 0.000 
+    Straps
+      Layer: met4 -  width: 1.600  pitch: 34.347  offset: 17.173 
+      Layer: met5 -  width: 1.600  pitch: 33.547  offset: 16.773 
+    Connect: {met4 met5} {met1 met4}
+Type: macro, macro_1
+    Macro orientation: R0 R180 MX MY R90 R270 MXR90 MYR90
+    Straps
+    Connect: {met4_PIN_ver met5}
+[INFO] [PDNG-0012] **** END INFO ****
+[INFO] [PDNG-0013] Inserting stdcell grid - grid
+[INFO] [PDNG-0015] Writing to database

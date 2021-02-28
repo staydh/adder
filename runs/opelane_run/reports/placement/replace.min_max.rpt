@@ -1,0 +1,62 @@
+Startpoint: i0[7] (input port clocked by clk)
+Endpoint: co (output port clocked by clk)
+Path Group: clk
+Path Type: min
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 ^ input external delay
+   0.02    0.02 ^ i0[7] (in)
+   0.09    0.11 ^ _48_/X (sky130_fd_sc_hd__o22a_4)
+   0.00    0.11 ^ co (out)
+           0.11   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+   0.00    0.00   output external delay
+           0.00   data required time
+---------------------------------------------------------
+           0.00   data required time
+          -0.11   data arrival time
+---------------------------------------------------------
+           0.11   slack (MET)
+
+
+Startpoint: i1[0] (input port clocked by clk)
+Endpoint: s[7] (output port clocked by clk)
+Path Group: clk
+Path Type: max
+
+  Delay    Time   Description
+---------------------------------------------------------
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00 v input external delay
+   0.01    0.01 v i1[0] (in)
+   0.27    0.28 v _28_/X (sky130_fd_sc_hd__and2_4)
+   0.39    0.67 v _29_/X (sky130_fd_sc_hd__o22a_4)
+   0.42    1.09 v _30_/X (sky130_fd_sc_hd__o22a_4)
+   0.44    1.52 v _31_/X (sky130_fd_sc_hd__o22a_4)
+   0.41    1.94 v _35_/X (sky130_fd_sc_hd__o22a_4)
+   0.41    2.34 v _39_/X (sky130_fd_sc_hd__o22a_4)
+   0.40    2.75 v _43_/X (sky130_fd_sc_hd__o22a_4)
+   0.41    3.15 v _47_/X (sky130_fd_sc_hd__o22a_4)
+   0.45    3.60 ^ _50_/X (sky130_fd_sc_hd__a2bb2o_4)
+   0.00    3.60 ^ s[7] (out)
+           3.60   data arrival time
+
+   0.00    0.00   clock clk (rise edge)
+   0.00    0.00   clock network delay (ideal)
+   0.00    0.00   clock reconvergence pessimism
+   0.00    0.00   output external delay
+           0.00   data required time
+---------------------------------------------------------
+           0.00   data required time
+          -3.60   data arrival time
+---------------------------------------------------------
+          -3.60   slack (VIOLATED)
+
+
