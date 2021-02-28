@@ -9,35 +9,104 @@ Somador em VHDL para teste do fluxo digital com front-end (ghdl + GTKwave) e bac
 
 ## Somador
 
+![img](.github/design.svg)
+
 O sistema consistiu na implementação do clássico projeto de somador digital.
+
+### Arquivos
 
 Arquivo    | Descrição
 ---------- | ------
 full_adder | Descrição do comportamento do clássico circuito somador-completo.
-full_adder_tb  | Testbench do somador completo
+full_adder_tb  | Testbench do somador completo.
 adder  | Decrição de um somador clássico de 8 bits, implementado a partir do somador completo.
 adder_tb  | Testbench do somador de 8 bits.
 
-### ghdl
+### Simulações
 
-Análise de arquivo de descrição: `ghdl -a file.vhdl`
+#### Requisitos
 
-Elaboração de unidade: `ghdl -a unit`
+- [GHDL](http://ghdl.free.fr/)
 
-Excutar simulação: `ghdl -r unit`
+#### Procedimento
 
-Exportar formas de ondas: `ghdl --wave=wave.ghw`
+```bash
 
-## Testes e formas de ondas
+# Análise dos arquivos de descrição
+$ ghdl -a ./src/vhdl/full_adder.vhdl
+$ ghdl -a ./src/vhdl/adder.vhdl
 
-### Simulação do Somador completo
+# Análise dos arquivos de testes
+$ ghdl -a ./src/vhdl/full_tb.vhdl
+$ ghdl -a ./src/vhdl/adder_tb.vhdl
+
+# Elaboração de unidades de testes
+$ ghdl -e full_adder_tb
+$ ghdl -e adder_tb
+
+# Executar simulação e exportar formas de ondas
+$ ghdl -r full_adder_tb --wave=./waves/full_adder_tb.ghw
+$ ghdl -r adder_tb --wave=./waves/adder_tb.ghw
+
+```
+
+### Formas de ondas
+
+#### Requisitos
+
+- [GTKWave](http://gtkwave.sourceforge.net/)
+
+#### Procedimento
+
+```bash 
+
+# full_adder
+$ gtkwave ./waves/full_adder_tb.ghw
+
+# adder
+$ gtkwave ./waves/adder_tb.ghw
+
+```
+
+#### Screenshots
 
 ![img](.github/full_adder.png)
 
-### Simulação do Somador de 8 bits
-
 ![img](.github/adder_tb.png)
 
-### gtkwave
+### VHDL -> Verilog
 
-Analisar formas de ondas: `gtkwave wave.ghw`
+#### Requisitos
+
+- [Yosys](http://www.clifford.at/yosys/)
+- [GHDL](http://ghdl.free.fr/)
+- [ghdl-yosys-plugin](https://github.com/ghdl/ghdl-yosys-plugin)
+
+#### Procedimento
+
+```bash
+
+# full_adder
+$ yosys -m ghdl -p 'ghdl ./src/vhdl/full_adder.vhdl -e full_adder; write_verilog full_adder.v'
+
+# adder
+$ yosys -m ghdl -p 'ghdl ./src/vhdl/adder.vhdl -e adder; write_verilog adder.v'
+
+```
+
+#### Observações
+
+Devido a problemas durante a instalação do [ghdl-yosys-plugin](https://github.com/ghdl/ghdl-yosys-plugin), a imagem [hdlc/ghdl:yosys](https://hub.docker.com/r/hdlc/ghdl/tags) e o [Docker](https://www.docker.com/) foram utilizados para a execução do procedimento acima.
+
+### Verilog -> GDSII
+
+#### Requisitos
+
+- [Openlane](https://github.com/efabless/openlane)
+- [Docker](https://www.docker.com/)
+
+#### Procedimento
+
+```bash
+
+```
