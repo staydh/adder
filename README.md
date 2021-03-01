@@ -152,4 +152,4 @@ $ docker run --rm -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$P
 #### Screenshots
 ![img](.github/gds.png)
 
-<center>staydh - 2021</center>
+<p align="center">staydh - 2021</p>
