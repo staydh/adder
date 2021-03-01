@@ -109,4 +109,47 @@ Devido a problemas durante a instalação do [ghdl-yosys-plugin](https://github.
 
 ```bash
 
+# Acessar local de instalação do Openlane
+cd ~/sky130_skel/openlane
+
+# Montar container da imagem openlane:rc6 
+$ docker run --rm -it -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) openlane:rc6 
+
+# Iniciar novo design 'adder'
+$ ./flow -design adder -init_design_config
+
+# Sair do container
+$ exit
 ```
+
+Após o procedimento acima, o arquivo `./designs/adder/config.tcl` deve ser editado conforme o presente [neste repositório](./config.tcl). Ademais, como o design é muito pequeno, problemas podem ocorrer no estágio de *placement*, conforme explicado [nesta seção](https://github.com/efabless/openlane/wiki#how-to-add-a-small-design) da documentação Openlane, dessa forma, as seguintes configurações foram necessárias:
+
+```bash
+
+# configuração adicionada ao arquivo: ./configuration/floorplan.tcl [relativo ao diretório do openlane]
+set ::env(FP_CORE_UTIL) 5
+
+# configuração adicionada ao arquivo: ./configuration/placement.tcl [relativo ao diretório do openlane]
+set ::env(PL_TARGET_DENSITY) 0.5
+
+```
+
+Após essas configurações, é necessário acessar a raiz desse repositório e seguir com o restante do procedimento:
+
+```bash
+
+# Copiar arquivos 'Verilog' para a pasta do design
+$ cp -r ./src/verilog ~/sky130_skel/openlane/designs/adder/src
+
+# Acessar local de instalação do Openlane
+$ cd ~/sky130_skel/openlane
+
+# Iniciar fluxo
+$ docker run --rm -v $(pwd):/openLANE_flow -v $PDK_ROOT:$PDK_ROOT -e PDK_ROOT=$PDK_ROOT -u $(id -u $USER):$(id -g $USER) openlane:rc6 ./flow -design adder -tag openlane_run
+
+```
+
+#### Screenshots
+![img](.github/gds.png)
+
+<center>staydh - 2021</center>
