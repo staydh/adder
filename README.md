@@ -98,6 +98,17 @@ $ yosys -m ghdl -p 'ghdl ./src/vhdl/adder.vhdl -e adder; write_verilog adder.v'
 
 Devido a problemas durante a instalação do [ghdl-yosys-plugin](https://github.com/ghdl/ghdl-yosys-plugin), a imagem [hdlc/ghdl:yosys](https://hub.docker.com/r/hdlc/ghdl/tags) e o [Docker](https://www.docker.com/) foram utilizados para a execução do procedimento acima.
 
+```bash
+
+# Montar container
+$ docker run --rm -it ./src/vhdl:/home -w /home -u $(id -u $USER):$(id -g $USER) hdlc/ghdl:yosys
+
+# Executar comandos dentro do container
+$ yosys -m ghdl -p 'ghdl ./full_adder.vhdl -e full_adder; write_verilog full_adder.v'
+$ yosys -m ghdl -p 'ghdl ./adder.vhdl -e adder; write_verilog adder.v'
+
+```
+
 ### Verilog -> GDSII
 
 #### Requisitos
