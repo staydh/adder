@@ -9,9 +9,9 @@ Path Type: min
    0.00    0.00   clock network delay (ideal)
    0.00    0.00 ^ input external delay
    0.02    0.02 ^ i0[7] (in)
-   0.07    0.09 ^ _48_/X (sky130_fd_sc_hd__o22a_4)
-   0.00    0.09 ^ co (out)
-           0.09   data arrival time
+   0.06    0.08 ^ _48_/X (sky130_fd_sc_hd__o22a_4)
+   0.00    0.08 ^ co (out)
+           0.08   data arrival time
 
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
@@ -20,9 +20,9 @@ Path Type: min
            0.00   data required time
 ---------------------------------------------------------
            0.00   data required time
-          -0.09   data arrival time
+          -0.08   data arrival time
 ---------------------------------------------------------
-           0.09   slack (MET)
+           0.08   slack (MET)
 
 
 Startpoint: i1[0] (input port clocked by clk)
@@ -36,17 +36,17 @@ Path Type: max
    0.00    0.00   clock network delay (ideal)
    0.00    0.00 v input external delay
    0.01    0.01 v i1[0] (in)
-   0.25    0.26 v _28_/X (sky130_fd_sc_hd__and2_4)
-   0.36    0.62 v _29_/X (sky130_fd_sc_hd__o22a_4)
-   0.38    1.01 v _30_/X (sky130_fd_sc_hd__o22a_4)
-   0.39    1.40 v _31_/X (sky130_fd_sc_hd__o22a_4)
-   0.38    1.78 v _35_/X (sky130_fd_sc_hd__o22a_4)
-   0.38    2.17 v _39_/X (sky130_fd_sc_hd__o22a_4)
-   0.37    2.54 v _43_/X (sky130_fd_sc_hd__o22a_4)
-   0.36    2.91 v _47_/X (sky130_fd_sc_hd__o22a_4)
-   0.39    3.29 v _50_/X (sky130_fd_sc_hd__a2bb2o_4)
-   0.00    3.29 v s[7] (out)
-           3.29   data arrival time
+   0.26    0.27 v _28_/X (sky130_fd_sc_hd__and2_4)
+   0.33    0.60 v _29_/X (sky130_fd_sc_hd__o22a_4)
+   0.36    0.96 v _30_/X (sky130_fd_sc_hd__o22a_4)
+   0.38    1.34 v _31_/X (sky130_fd_sc_hd__o22a_4)
+   0.38    1.72 v _35_/X (sky130_fd_sc_hd__o22a_4)
+   0.36    2.08 v _39_/X (sky130_fd_sc_hd__o22a_4)
+   0.37    2.45 v _43_/X (sky130_fd_sc_hd__o22a_4)
+   0.40    2.85 v _47_/X (sky130_fd_sc_hd__o22a_4)
+   0.38    3.23 v _50_/X (sky130_fd_sc_hd__a2bb2o_4)
+   0.00    3.23 v s[7] (out)
+           3.23   data arrival time
 
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
@@ -55,8 +55,8 @@ Path Type: max
            0.00   data required time
 ---------------------------------------------------------
            0.00   data required time
-          -3.29   data arrival time
+          -3.23   data arrival time
 ---------------------------------------------------------
-          -3.29   slack (VIOLATED)
+          -3.23   slack (VIOLATED)
 
 

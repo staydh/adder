@@ -11,7 +11,7 @@ Notice 0:
 Reading DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/routing/adder.powered.def
 Notice 0: Design: adder
 Notice 0:     Created 28 pins.
-Notice 0:     Created 1008 components and 3979 component-terminals.
+Notice 0:     Created 1038 components and 4105 component-terminals.
 Notice 0:     Created 2 special nets and 0 connections.
-Notice 0:     Created 89 nets and 3979 connections.
+Notice 0:     Created 92 nets and 4105 connections.
 Notice 0: Finished DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/routing/adder.powered.def

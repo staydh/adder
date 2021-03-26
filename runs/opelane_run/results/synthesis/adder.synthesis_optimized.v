@@ -43,9 +43,9 @@ module adder (ci,
     .B2(_05_),
     .X(_06_));
  sky130_fd_sc_hd__a2bb2o_4 _32_ (.A1_N(_00_),
-    .A2_N(psn_net_6),
+    .A2_N(psn_net_3),
     .B1(_00_),
-    .B2(psn_net_6),
+    .B2(psn_net_3),
     .X(s[3]));
  sky130_fd_sc_hd__a2bb2o_4 _33_ (.A1_N(i1[4]),
     .A2_N(i0[4]),
@@ -61,9 +61,9 @@ module adder (ci,
     .B2(_06_),
     .X(_09_));
  sky130_fd_sc_hd__a2bb2o_4 _36_ (.A1_N(_07_),
-    .A2_N(psn_net_4),
+    .A2_N(psn_net_2),
     .B1(_07_),
-    .B2(psn_net_5),
+    .B2(psn_net_2),
     .X(s[4]));
  sky130_fd_sc_hd__a2bb2o_4 _37_ (.A1_N(i1[5]),
     .A2_N(i0[5]),
@@ -79,9 +79,9 @@ module adder (ci,
     .B2(_09_),
     .X(_12_));
  sky130_fd_sc_hd__a2bb2o_4 _40_ (.A1_N(_10_),
-    .A2_N(psn_net_2),
+    .A2_N(psn_net_1),
     .B1(_10_),
-    .B2(psn_net_3),
+    .B2(psn_net_1),
     .X(s[5]));
  sky130_fd_sc_hd__a2bb2o_4 _41_ (.A1_N(i1[6]),
     .A2_N(i0[6]),
@@ -99,7 +99,7 @@ module adder (ci,
  sky130_fd_sc_hd__a2bb2o_4 _44_ (.A1_N(_13_),
     .A2_N(psn_net_0),
     .B1(_13_),
-    .B2(psn_net_1),
+    .B2(psn_net_0),
     .X(s[6]));
  sky130_fd_sc_hd__and2_4 _45_ (.A(i0[7]),
     .B(i1[7]),
@@ -129,7 +129,7 @@ module adder (ci,
     .X(s[7]));
  sky130_fd_sc_hd__inv_2 _51_ (.A(ci),
     .Y(_20_));
- sky130_fd_sc_hd__inv_2 _52_ (.A(psn_net_10),
+ sky130_fd_sc_hd__inv_2 _52_ (.A(psn_net_6),
     .Y(_21_));
  sky130_fd_sc_hd__o21a_4 _53_ (.A1(i0[0]),
     .A2(i1[0]),
@@ -146,8 +146,8 @@ module adder (ci,
     .B2(i1[1]),
     .X(_23_));
  sky130_fd_sc_hd__a2bb2o_4 _56_ (.A1_N(_23_),
-    .A2_N(psn_net_9),
-    .B1(psn_net_8),
+    .A2_N(psn_net_5),
+    .B1(psn_net_5),
     .B2(_23_),
     .X(s[1]));
  sky130_fd_sc_hd__a2bb2o_4 _57_ (.A1_N(i0[2]),
@@ -156,8 +156,8 @@ module adder (ci,
     .B2(i1[2]),
     .X(_24_));
  sky130_fd_sc_hd__a2bb2o_4 _58_ (.A1_N(_24_),
-    .A2_N(psn_net_7),
-    .B1(psn_net_7),
+    .A2_N(psn_net_4),
+    .B1(psn_net_4),
     .B2(_24_),
     .X(s[2]));
  sky130_fd_sc_hd__decap_3 PHY_0 ();
@@ -372,74 +372,80 @@ module adder (ci,
  sky130_fd_sc_hd__tapvpwrvgnd_1 PHY_209 ();
  sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_0 (.A(_15_),
     .X(psn_net_0));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_1 (.A(_15_),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_1 (.A(psn_net_7),
     .X(psn_net_1));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_2 (.A(_12_),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_2 (.A(psn_net_8),
     .X(psn_net_2));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_3 (.A(_12_),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_3 (.A(psn_net_9),
     .X(psn_net_3));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_4 (.A(psn_net_11),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_4 (.A(psn_net_10),
     .X(psn_net_4));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_5 (.A(_09_),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_5 (.A(psn_net_11),
     .X(psn_net_5));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_6 (.A(_06_),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_6 (.A(psn_net_12),
     .X(psn_net_6));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_7 (.A(psn_net_12),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_7 (.A(psn_net_13),
     .X(psn_net_7));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_8 (.A(psn_net_13),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_8 (.A(psn_net_14),
     .X(psn_net_8));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_9 (.A(psn_net_13),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_9 (.A(psn_net_15),
     .X(psn_net_9));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_10 (.A(psn_net_14),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_10 (.A(psn_net_16),
     .X(psn_net_10));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_11 (.A(psn_net_15),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_11 (.A(psn_net_17),
     .X(psn_net_11));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_12 (.A(psn_net_16),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_12 (.A(psn_net_18),
     .X(psn_net_12));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_13 (.A(psn_net_17),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_13 (.A(_12_),
     .X(psn_net_13));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_14 (.A(psn_net_18),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_14 (.A(psn_net_19),
     .X(psn_net_14));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_15 (.A(psn_net_19),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_15 (.A(psn_net_20),
     .X(psn_net_15));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_16 (.A(psn_net_20),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_16 (.A(psn_net_21),
     .X(psn_net_16));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_17 (.A(psn_net_21),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_17 (.A(psn_net_22),
     .X(psn_net_17));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_18 (.A(psn_net_22),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_18 (.A(psn_net_23),
     .X(psn_net_18));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_19 (.A(psn_net_23),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_19 (.A(psn_net_24),
     .X(psn_net_19));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_20 (.A(psn_net_24),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_20 (.A(psn_net_25),
     .X(psn_net_20));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_21 (.A(psn_net_25),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_21 (.A(psn_net_26),
     .X(psn_net_21));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_22 (.A(psn_net_26),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_22 (.A(psn_net_27),
     .X(psn_net_22));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_23 (.A(_09_),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_23 (.A(psn_net_28),
     .X(psn_net_23));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_24 (.A(psn_net_27),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_24 (.A(_09_),
     .X(psn_net_24));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_25 (.A(psn_net_28),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_25 (.A(psn_net_29),
     .X(psn_net_25));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_26 (.A(psn_net_29),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_26 (.A(psn_net_30),
     .X(psn_net_26));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_27 (.A(psn_net_30),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_27 (.A(psn_net_31),
     .X(psn_net_27));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_28 (.A(psn_net_31),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_28 (.A(psn_net_32),
     .X(psn_net_28));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_29 (.A(psn_net_32),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_29 (.A(_06_),
     .X(psn_net_29));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_30 (.A(_05_),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_30 (.A(psn_net_33),
     .X(psn_net_30));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_31 (.A(psn_net_33),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_31 (.A(psn_net_34),
     .X(psn_net_31));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_32 (.A(psn_net_34),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_32 (.A(psn_net_35),
     .X(psn_net_32));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_33 (.A(_04_),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_33 (.A(_05_),
     .X(psn_net_33));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_34 (.A(psn_net_35),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_34 (.A(psn_net_36),
     .X(psn_net_34));
- sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_35 (.A(_03_),
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_35 (.A(psn_net_37),
     .X(psn_net_35));
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_36 (.A(_04_),
+    .X(psn_net_36));
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_37 (.A(psn_net_38),
+    .X(psn_net_37));
+ sky130_fd_sc_hd__buf_2 psn_inst_psn_buff_38 (.A(_03_),
+    .X(psn_net_38));
 endmodule

@@ -40,26 +40,26 @@ LEF read: Processed 789 lines.
 Reading DEF data from file /openLANE_flow/designs/adder/runs/opelane_run/results/routing/adder.def.
 This action cannot be undone.
   Processed 6 vias total.
-  Processed 1008 subcell instances total.
+  Processed 1038 subcell instances total.
   Processed 36 pins total.
   Processed 2 special nets total.
-  Processed 87 nets total.
-DEF read: Processed 2725 lines.
+  Processed 90 nets total.
+DEF read: Processed 2781 lines.
 [INFO]: Zeroizing Origin
 [INFO]: Current Box Values: 0 0 22858 25002
    Writing cell adder
+   Writing cell sky130_fd_sc_hd__decap_8
+   Writing cell sky130_fd_sc_hd__fill_1
    Writing cell sky130_fd_sc_hd__decap_12
+   Writing cell sky130_fd_sc_hd__decap_6
+   Writing cell sky130_fd_sc_hd__buf_2
    Writing cell sky130_fd_sc_hd__decap_3
-   Writing cell sky130_fd_sc_hd__decap_4
+   Writing cell sky130_fd_sc_hd__inv_2
    Writing cell sky130_fd_sc_hd__tapvpwrvgnd_1
    Writing cell sky130_fd_sc_hd__fill_2
-   Writing cell sky130_fd_sc_hd__decap_8
-   Writing cell sky130_fd_sc_hd__decap_6
-   Writing cell sky130_fd_sc_hd__fill_1
-   Writing cell sky130_fd_sc_hd__buf_2
+   Writing cell sky130_fd_sc_hd__decap_4
+   Writing cell sky130_fd_sc_hd__o21a_4
+   Writing cell sky130_fd_sc_hd__and2_4
    Writing cell sky130_fd_sc_hd__a2bb2o_4
    Writing cell sky130_fd_sc_hd__o22a_4
-   Writing cell sky130_fd_sc_hd__and2_4
-   Writing cell sky130_fd_sc_hd__inv_2
-   Writing cell sky130_fd_sc_hd__o21a_4
 [INFO]: GDS Write Complete

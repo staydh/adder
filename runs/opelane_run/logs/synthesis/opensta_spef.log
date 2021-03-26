@@ -8,8 +8,8 @@ Error: cannot open '/root/.sta'.
 Warning: /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib, line 31 default_operating_condition ff_n40C_1v95 not found.
 Warning: /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, line 32 default_operating_condition ss_100C_1v60 not found.
 Warning: /openLANE_flow/designs/adder/runs/opelane_run/results/synthesis/adder.synthesis_preroute.v, line 237 module sky130_fd_sc_hd__tapvpwrvgnd_1 not found.  Creating black box for PHY_74.
-Warning: /openLANE_flow/designs/adder/runs/opelane_run/results/synthesis/adder.synthesis_preroute.v, line 472 module sky130_fd_sc_hd__fill_2 not found.  Creating black box for FILLER_1_59.
-Warning: /openLANE_flow/designs/adder/runs/opelane_run/results/synthesis/adder.synthesis_preroute.v, line 486 module sky130_fd_sc_hd__fill_1 not found.  Creating black box for FILLER_1_220.
+Warning: /openLANE_flow/designs/adder/runs/opelane_run/results/synthesis/adder.synthesis_preroute.v, line 454 module sky130_fd_sc_hd__fill_1 not found.  Creating black box for FILLER_0_30.
+Warning: /openLANE_flow/designs/adder/runs/opelane_run/results/synthesis/adder.synthesis_preroute.v, line 480 module sky130_fd_sc_hd__fill_2 not found.  Creating black box for FILLER_1_59.
 create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)
 Warning: base.sdc, 1 port 'clk' not found.
 set input_delay_value [expr $::env(CLOCK_PERIOD) * $::env(IO_PCT)]
@@ -34,5 +34,5 @@ set cap_load [expr $::env(SYNTH_CAP_LOAD) / 1000.0]
 puts "\[INFO\]: Setting load to: $cap_load"
 [INFO]: Setting load to: 0.01765
 set_load  $cap_load [all_outputs]
-tns -26.17
-wns -3.29
+tns -27.36
+wns -3.23

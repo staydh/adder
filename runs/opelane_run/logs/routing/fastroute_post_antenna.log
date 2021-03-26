@@ -12,9 +12,9 @@ Notice 0:
 Reading DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/routing/fastroute.def
 Notice 0: Design: adder
 Notice 0:     Created 28 pins.
-Notice 0:     Created 280 components and 1067 component-terminals.
+Notice 0:     Created 283 components and 1085 component-terminals.
 Notice 0:     Created 2 special nets and 0 connections.
-Notice 0:     Created 87 nets and 219 connections.
+Notice 0:     Created 90 nets and 225 connections.
 Notice 0: Finished DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/routing/fastroute.def
 [PARAMS] Min routing layer: 2
 [PARAMS] Max routing layer: 6
@@ -22,26 +22,26 @@ Notice 0: Finished DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/r
 [PARAMS] Unidirectional routing: 1
 [PARAMS] Grid origin: (-1, -1)
 [INFO] #DB Obstructions: 0
-[INFO] #DB Obstacles: 4512
+[INFO] #DB Obstacles: 4575
 [INFO] #DB Macros: 0
 [INFO] Found 0 clock nets
 [INFO] Minimum degree: 2
 [INFO] Maximum degree: 5
-[INFO] Processing 3207 obstacles on layer 1
-[INFO] Processing 673 obstacles on layer 2
+[INFO] Processing 3258 obstacles on layer 1
+[INFO] Processing 679 obstacles on layer 2
 [INFO] Processing 5 obstacles on layer 5
 [INFO] Processing 5 obstacles on layer 6
 [INFO] Reducing resources of layer 1 by 99%
-[INFO] WIRELEN : 295, WIRELEN1 : 0
-[INFO] NumSeg  : 115
+[INFO] WIRELEN : 330, WIRELEN1 : 0
+[INFO] NumSeg  : 122
 [INFO] NumShift: 0
 First L Route
-[INFO] WIRELEN : 295, WIRELEN1 : 295
-[INFO] NumSeg  : 115
+[INFO] WIRELEN : 330, WIRELEN1 : 330
+[INFO] NumSeg  : 122
 [INFO] NumShift: 0
-[Overflow Report] Total hCap    : 7863
+[Overflow Report] Total hCap    : 7887
 [Overflow Report] Total vCap    : 6079
-[Overflow Report] Total Usage   : 295
+[Overflow Report] Total Usage   : 330
 [Overflow Report] Max H Overflow: 0
 [Overflow Report] Max V Overflow: 0
 [Overflow Report] Max Overflow  : 0
@@ -51,9 +51,9 @@ First L Route
 [Overflow Report] Final Overflow: 0
 
 Second L Route
-[Overflow Report] Total hCap    : 7863
+[Overflow Report] Total hCap    : 7887
 [Overflow Report] Total vCap    : 6079
-[Overflow Report] Total Usage   : 295
+[Overflow Report] Total Usage   : 330
 [Overflow Report] Max H Overflow: 0
 [Overflow Report] Max V Overflow: 0
 [Overflow Report] Max Overflow  : 0
@@ -63,9 +63,9 @@ Second L Route
 [Overflow Report] Final Overflow: 0
 
 First Z Route
-[Overflow Report] Total hCap    : 7863
+[Overflow Report] Total hCap    : 7887
 [Overflow Report] Total vCap    : 6079
-[Overflow Report] Total Usage   : 295
+[Overflow Report] Total Usage   : 330
 [Overflow Report] Max H Overflow: 0
 [Overflow Report] Max V Overflow: 0
 [Overflow Report] Max Overflow  : 0
@@ -76,7 +76,7 @@ First Z Route
 
 [INFO] LV routing round 0, enlarge 10 
 [INFO] 10 threshold, 10 expand
-[Overflow Report] total Usage   : 295
+[Overflow Report] total Usage   : 330
 [Overflow Report] Max H Overflow: 0
 [Overflow Report] Max V Overflow: 0
 [Overflow Report] Max Overflow  : 0
@@ -87,7 +87,7 @@ First Z Route
 
 [INFO] LV routing round 1, enlarge 15 
 [INFO] 5 threshold, 15 expand
-[Overflow Report] total Usage   : 295
+[Overflow Report] total Usage   : 330
 [Overflow Report] Max H Overflow: 0
 [Overflow Report] Max V Overflow: 0
 [Overflow Report] Max Overflow  : 0
@@ -98,7 +98,7 @@ First Z Route
 
 [INFO] LV routing round 2, enlarge 20 
 [INFO] 1 threshold, 20 expand
-[Overflow Report] total Usage   : 295
+[Overflow Report] total Usage   : 330
 [Overflow Report] Max H Overflow: 0
 [Overflow Report] Max V Overflow: 0
 [Overflow Report] Max Overflow  : 0
@@ -111,7 +111,7 @@ Usage checked
 Maze routing finished
 [INFO] P3 runtime: 0.000000 sec
 [INFO] Final 2D results: 
-[Overflow Report] total Usage   : 295
+[Overflow Report] total Usage   : 330
 [Overflow Report] Max H Overflow: 0
 [Overflow Report] Max V Overflow: 0
 [Overflow Report] Max Overflow  : 0
@@ -126,22 +126,22 @@ Layer assignment finished
 Post Processing Begins 
 Post Processsing finished
  Starting via filling
-[INFO] Via related to pin nodes 268
-[INFO] Via related stiner nodes 7
+[INFO] Via related to pin nodes 341
+[INFO] Via related stiner nodes 1
 Via filling finished
 
 Final usage/overflow report: 
 [INFO] Usage per layer: 
     Layer 1 usage: 0
-    Layer 2 usage: 133
-    Layer 3 usage: 165
+    Layer 2 usage: 110
+    Layer 3 usage: 221
     Layer 4 usage: 0
     Layer 5 usage: 0
     Layer 6 usage: 0
 
 [INFO] Capacity per layer: 
     Layer 1 capacity: 0
-    Layer 2 capacity: 4638
+    Layer 2 capacity: 4662
     Layer 3 capacity: 4182
     Layer 4 capacity: 2700
     Layer 5 capacity: 1897
@@ -149,8 +149,8 @@ Final usage/overflow report:
 
 [INFO] Use percentage per layer: 
     Layer 1 use percentage: 0.0%
-    Layer 2 use percentage: 2.87%
-    Layer 3 use percentage: 3.95%
+    Layer 2 use percentage: 2.36%
+    Layer 3 use percentage: 5.28%
     Layer 4 use percentage: 0.00%
     Layer 5 use percentage: 0.00%
     Layer 6 use percentage: 0.00%
@@ -163,8 +163,8 @@ Final usage/overflow report:
     Layer 5 overflow: 0
     Layer 6 overflow: 0
 
-[Overflow Report] Total Usage   : 298
-[Overflow Report] Total Capacity: 13942
+[Overflow Report] Total Usage   : 331
+[Overflow Report] Total Capacity: 13966
 [Overflow Report] Max H Overflow: 0
 [Overflow Report] Max V Overflow: 0
 [Overflow Report] Max Overflow  : 0
@@ -172,11 +172,11 @@ Final usage/overflow report:
 [Overflow Report] V   Overflow  : 0
 [Overflow Report] Final Overflow: 0
 
-[INFO] Final usage          : 298
-[INFO] Final number of vias : 310
-[INFO] Final usage 3D       : 1228
-[INFO] Total wirelength: 3615 um
-[INFO] Num routed nets: 87
+[INFO] Final usage          : 331
+[INFO] Final number of vias : 391
+[INFO] Final usage 3D       : 1504
+[INFO] Total wirelength: 3919 um
+[INFO] Num routed nets: 90
 Warning: /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib, line 32 default_operating_condition ss_100C_1v60 not found.
 Warning: /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib, line 31 default_operating_condition ff_n40C_1v95 not found.
 create_clock [get_ports $::env(CLOCK_PORT)]  -name $::env(CLOCK_PORT)  -period $::env(CLOCK_PERIOD)

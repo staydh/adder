@@ -568,14 +568,14 @@ Mapping DFF cells in module `\adder':
 
 15. Executing ABC pass (technology mapping using ABC).
 
-15.1. Extracting gate netlist of module `\adder' to `/tmp/yosys-abc-GUbh62/input.blif'..
+15.1. Extracting gate netlist of module `\adder' to `/tmp/yosys-abc-SCMct9/input.blif'..
 Extracted 56 gates and 73 wires to a netlist network with 17 inputs and 9 outputs.
 
 15.1.1. Executing ABC.
-Running ABC command: /build/bin/yosys-abc -s -f /tmp/yosys-abc-GUbh62/abc.script 2>&1
-ABC: ABC command line: "source /tmp/yosys-abc-GUbh62/abc.script".
+Running ABC command: /build/bin/yosys-abc -s -f /tmp/yosys-abc-SCMct9/abc.script 2>&1
+ABC: ABC command line: "source /tmp/yosys-abc-SCMct9/abc.script".
 ABC: 
-ABC: + read_blif /tmp/yosys-abc-GUbh62/input.blif 
+ABC: + read_blif /tmp/yosys-abc-SCMct9/input.blif 
 ABC: + read_lib -w /openLANE_flow/designs/adder/runs/opelane_run/tmp/trimmed.lib 
 ABC: Parsing finished successfully.  Parsing time =     0.04 sec
 ABC: Scl_LibertyReadGenlib() skipped sequential cell "sky130_fd_sc_hd__dfbbn_2".
@@ -686,7 +686,7 @@ ABC: Path  8 --      52 : 4    1 sky130_fd_sc_hd__a2bb2o_4 A =  20.02  Df =1781.
 ABC: Start-point = pi4 (\i1 [0]).  End-point = po5 (\fa_f:7.fa_i._1_).
 ABC: + print_stats -m 
 ABC: netlist                       : i/o =   17/    9  lat =    0  nd =    34  edge =    113  area =533.05  delay = 9.00  lev = 9
-ABC: + write_blif /tmp/yosys-abc-GUbh62/output.blif 
+ABC: + write_blif /tmp/yosys-abc-SCMct9/output.blif 
 
 15.1.2. Re-integrating ABC results.
 ABC RESULTS:   sky130_fd_sc_hd__a2bb2o_4 cells:       15
@@ -749,6 +749,6 @@ found and reported 9 problems.
 Dumping module `\adder'.
 
 Warnings: 9 unique messages, 9 total
-End of script. Logfile hash: 765d9f731e, CPU: user 1.14s system 0.01s, MEM: 43.96 MB peak
+End of script. Logfile hash: 771d5d3e8b, CPU: user 1.29s system 0.06s, MEM: 43.80 MB peak
 Yosys 0.9+3621 (git sha1 84e9fa7, gcc 8.3.1 -fPIC -Os)
-Time spent: 41% 4x stat (0 sec), 29% 2x abc (0 sec), ...
+Time spent: 42% 4x stat (0 sec), 29% 2x abc (0 sec), ...

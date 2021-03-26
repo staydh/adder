@@ -163,11 +163,11 @@ sky130_fd_sc_hd__a2bb2o_4 (15)             |sky130_fd_sc_hd__a2bb2o_4 (15)
 sky130_fd_sc_hd__tapvpwrvgnd_1 (136)       |sky130_fd_sc_hd__tapvpwrvgnd_1 (136)       
 sky130_fd_sc_hd__o22a_4 (8)                |sky130_fd_sc_hd__o22a_4 (8)                
 sky130_fd_sc_hd__and2_4 (8)                |sky130_fd_sc_hd__and2_4 (8)                
-sky130_fd_sc_hd__buf_2 (36)                |sky130_fd_sc_hd__buf_2 (36)                
+sky130_fd_sc_hd__buf_2 (39)                |sky130_fd_sc_hd__buf_2 (39)                
 sky130_fd_sc_hd__o21a_4 (1)                |sky130_fd_sc_hd__o21a_4 (1)                
 sky130_fd_sc_hd__inv_2 (2)                 |sky130_fd_sc_hd__inv_2 (2)                 
-Number of devices: 206                     |Number of devices: 206                     
-Number of nets: 89                         |Number of nets: 89                         
+Number of devices: 209                     |Number of devices: 209                     
+Number of nets: 92                         |Number of nets: 92                         
 ---------------------------------------------------------------------------------------
 Resolving automorphisms by property value.
 Resolving automorphisms by pin name.
@@ -177,29 +177,29 @@ Circuits match correctly.
 Subcircuit pins:
 Circuit 1: adder                           |Circuit 2: adder                           
 -------------------------------------------|-------------------------------------------
+co                                         |co                                         
+s[7]                                       |s[7]                                       
+s[0]                                       |s[0]                                       
+s[1]                                       |s[1]                                       
+s[2]                                       |s[2]                                       
+s[3]                                       |s[3]                                       
 s[4]                                       |s[4]                                       
 s[5]                                       |s[5]                                       
 s[6]                                       |s[6]                                       
-co                                         |co                                         
-s[7]                                       |s[7]                                       
-s[1]                                       |s[1]                                       
-s[3]                                       |s[3]                                       
-s[0]                                       |s[0]                                       
-s[2]                                       |s[2]                                       
 ci                                         |ci                                         
 i0[0]                                      |i0[0]                                      
 i1[0]                                      |i1[0]                                      
 i1[3]                                      |i1[3]                                      
-i0[3]                                      |i0[3]                                      
-i0[2]                                      |i0[2]                                      
-i0[1]                                      |i0[1]                                      
-i1[2]                                      |i1[2]                                      
-i1[1]                                      |i1[1]                                      
 i1[4]                                      |i1[4]                                      
+i0[2]                                      |i0[2]                                      
 i1[5]                                      |i1[5]                                      
-i1[6]                                      |i1[6]                                      
+i0[1]                                      |i0[1]                                      
+i0[3]                                      |i0[3]                                      
 i0[4]                                      |i0[4]                                      
+i1[2]                                      |i1[2]                                      
 i0[5]                                      |i0[5]                                      
+i1[1]                                      |i1[1]                                      
+i1[6]                                      |i1[6]                                      
 i0[6]                                      |i0[6]                                      
 i0[7]                                      |i0[7]                                      
 i1[7]                                      |i1[7]                                      

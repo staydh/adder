@@ -11,11 +11,11 @@ Notice 0:
 Reading DEF file: /openLANE_flow/designs/adder/runs/opelane_run/results/routing/adder.def
 Notice 0: Design: adder
 Notice 0:     Created 36 pins.
-Notice 0:     Created 1008 components and 3979 component-terminals.
+Notice 0:     Created 1038 components and 4105 component-terminals.
 Notice 0:     Created 2 special nets and 0 connections.
-Notice 0:     Created 87 nets and 219 connections.
+Notice 0:     Created 90 nets and 225 connections.
 Notice 0: Finished DEF file: /openLANE_flow/designs/adder/runs/opelane_run/results/routing/adder.def
-Notice 0: Split top of 15 T shapes.
+Notice 0: Split top of 17 T shapes.
 Number of pins violated: 0
 Number of nets violated: 0
-Total number of nets: 87
+Total number of nets: 90

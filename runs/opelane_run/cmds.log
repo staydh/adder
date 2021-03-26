@@ -1,92 +1,92 @@
-Sun Feb 28 17:09:32 UTC 2021 - Executing "/openLANE_flow/scripts/mergeLef.py -i /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef {/edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fakediode_2.lef /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} -o /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged_unpadded.lef |& tee /dev/null"
+Fri Mar 26 12:33:42 UTC 2021 - Executing "/openLANE_flow/scripts/mergeLef.py -i /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd.tlef {/edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd__fakediode_2.lef /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef} -o /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged_unpadded.lef |& tee /dev/null"
 
-Sun Feb 28 17:09:33 UTC 2021 - Executing "/openLANE_flow/scripts/libtrim.pl /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /edatools/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/no_synth.cells > /openLANE_flow/designs/adder/runs/opelane_run/tmp/trimmed.lib"
+Fri Mar 26 12:33:42 UTC 2021 - Executing "/openLANE_flow/scripts/libtrim.pl /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib /edatools/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/no_synth.cells > /openLANE_flow/designs/adder/runs/opelane_run/tmp/trimmed.lib"
 
-Sun Feb 28 17:09:33 UTC 2021 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openLANE_flow/designs/adder/runs/opelane_run/tmp/sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
+Fri Mar 26 12:33:43 UTC 2021 - Executing "sed -E {s/^([[:space:]]+)pg_pin(.*)/\1pin\2\n\1    direction : "inout";/g} /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib > /openLANE_flow/designs/adder/runs/opelane_run/tmp/sky130_fd_sc_hd__tt_025C_1v80.no_pg.lib"
 
-Sun Feb 28 17:09:33 UTC 2021 - Executing "yosys -c /openLANE_flow/scripts/synth.tcl -l /openLANE_flow/designs/adder/runs/opelane_run/logs/synthesis/yosys.log |& tee /dev/null"
+Fri Mar 26 12:33:43 UTC 2021 - Executing "yosys -c /openLANE_flow/scripts/synth.tcl -l /openLANE_flow/designs/adder/runs/opelane_run/logs/synthesis/yosys.log |& tee /dev/null"
 
-Sun Feb 28 17:09:35 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/synthesis\/adder.synthesis.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
+Fri Mar 26 12:33:45 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/synthesis\/adder.synthesis.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
 
-Sun Feb 28 17:09:35 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
+Fri Mar 26 12:33:45 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 0/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
 
-Sun Feb 28 17:09:35 UTC 2021 - Executing "sed -i /defparam/d /openLANE_flow/designs/adder/runs/opelane_run/results/synthesis/adder.synthesis.v"
+Fri Mar 26 12:33:45 UTC 2021 - Executing "sed -i /defparam/d /openLANE_flow/designs/adder/runs/opelane_run/results/synthesis/adder.synthesis.v"
 
-Sun Feb 28 17:09:35 UTC 2021 - Executing "sta /openLANE_flow/scripts/sta.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/synthesis/opensta.log"
+Fri Mar 26 12:33:45 UTC 2021 - Executing "sta /openLANE_flow/scripts/sta.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/synthesis/opensta.log"
 
-Sun Feb 28 17:09:38 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_floorplan.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/floorplan/verilog2def.openroad.log"
+Fri Mar 26 12:33:47 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_floorplan.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/floorplan/verilog2def.openroad.log"
 
-Sun Feb 28 17:09:39 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_ioplacer.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/floorplan/ioPlacer.log"
+Fri Mar 26 12:33:49 UTC 2021 - Executing "python3 /openLANE_flow/scripts/io_place.py --input-lef /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged.lef --input-def /openLANE_flow/designs/adder/runs/opelane_run/tmp/floorplan/verilog2def_openroad.def --config /openLANE_flow/designs/adder/pin_order.cfg --hor-layer 4 --ver-layer 3 --ver-width-mult 2 --hor-width-mult 2 --hor-extension -1 --ver-extension -1 --length 4 -o /openLANE_flow/designs/adder/runs/opelane_run/tmp/floorplan/ioPlacer.def |& tee /openLANE_flow/designs/adder/runs/opelane_run/logs/floorplan/place_io_ol.log /dev/null"
 
-Sun Feb 28 17:09:40 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_tapcell.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/floorplan/tapcell.log"
+Fri Mar 26 12:33:50 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_tapcell.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/floorplan/tapcell.log"
 
-Sun Feb 28 17:09:41 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/new_pdn.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/floorplan/pdn.log"
+Fri Mar 26 12:33:51 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/new_pdn.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/floorplan/pdn.log"
 
-Sun Feb 28 17:09:43 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_replace.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/placement/replace.log"
+Fri Mar 26 12:33:52 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_replace.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/placement/replace.log"
 
-Sun Feb 28 17:09:46 UTC 2021 - Executing "/openLANE_flow/scripts/libtrim.pl /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib /edatools/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/no_synth.cells > /openLANE_flow/designs/adder/runs/opelane_run/tmp/opt.lib"
+Fri Mar 26 12:33:56 UTC 2021 - Executing "/openLANE_flow/scripts/libtrim.pl /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib /edatools/pdks/sky130A/libs.tech/openlane/sky130_fd_sc_hd/no_synth.cells > /openLANE_flow/designs/adder/runs/opelane_run/tmp/opt.lib"
 
-Sun Feb 28 17:09:47 UTC 2021 - Executing "Psn /openLANE_flow/scripts/openPhySyn.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/placement/openphysyn.log"
+Fri Mar 26 12:33:57 UTC 2021 - Executing "Psn /openLANE_flow/scripts/openPhySyn.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/placement/openphysyn.log"
 
-Sun Feb 28 17:09:49 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/write_verilog.log"
+Fri Mar 26 12:33:58 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/write_verilog.log"
 
-Sun Feb 28 17:09:50 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/synthesis\/adder.synthesis_optimized.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
+Fri Mar 26 12:33:59 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/synthesis\/adder.synthesis_optimized.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
 
-Sun Feb 28 17:09:50 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/synthesis\/adder.synthesis.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
+Fri Mar 26 12:33:59 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/synthesis\/adder.synthesis.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
 
-Sun Feb 28 17:09:50 UTC 2021 - Executing "sta /openLANE_flow/scripts/sta.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/synthesis/opensta_post_openphysyn.log"
+Fri Mar 26 12:33:59 UTC 2021 - Executing "sta /openLANE_flow/scripts/sta.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/synthesis/opensta_post_openphysyn.log"
 
-Sun Feb 28 17:09:53 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_opendp.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/placement/opendp.log"
+Fri Mar 26 12:34:02 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_opendp.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/placement/opendp.log"
 
-Sun Feb 28 17:09:54 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_route.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/routing/fastroute.log"
+Fri Mar 26 12:34:03 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_route.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/routing/fastroute.log"
 
-Sun Feb 28 17:09:56 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_route.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/routing/fastroute_post_antenna.log"
+Fri Mar 26 12:34:06 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_route.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/routing/fastroute_post_antenna.log"
 
-Sun Feb 28 17:10:00 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_fill.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/routing/addspacers.log"
+Fri Mar 26 12:34:10 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_fill.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/routing/addspacers.log"
 
-Sun Feb 28 17:10:02 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/write_verilog.log"
+Fri Mar 26 12:34:12 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/write_verilog.log"
 
-Sun Feb 28 17:10:03 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/synthesis\/adder.synthesis_preroute.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
+Fri Mar 26 12:34:13 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/synthesis\/adder.synthesis_preroute.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
 
-Sun Feb 28 17:10:03 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/synthesis\/adder.synthesis_optimized.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
+Fri Mar 26 12:34:13 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/synthesis\/adder.synthesis_optimized.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
 
-Sun Feb 28 17:10:03 UTC 2021 - Executing "envsubst < /openLANE_flow/scripts/tritonRoute.param > /openLANE_flow/designs/adder/runs/opelane_run/tmp/routing/tritonRoute.param"
+Fri Mar 26 12:34:13 UTC 2021 - Executing "envsubst < /openLANE_flow/scripts/tritonRoute.param > /openLANE_flow/designs/adder/runs/opelane_run/tmp/routing/tritonRoute.param"
 
-Sun Feb 28 17:10:03 UTC 2021 - Executing "TritonRoute /openLANE_flow/designs/adder/runs/opelane_run/tmp/routing/tritonRoute.param |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/routing/tritonRoute.log"
+Fri Mar 26 12:34:13 UTC 2021 - Executing "TritonRoute /openLANE_flow/designs/adder/runs/opelane_run/tmp/routing/tritonRoute.param |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/routing/tritonRoute.log"
 
-Sun Feb 28 17:10:14 UTC 2021 - Executing "python3 /openLANE_flow/scripts/tr2klayout.py -i /openLANE_flow/designs/adder/runs/opelane_run/reports/routing/tritonRoute.drc -o /openLANE_flow/designs/adder/runs/opelane_run/reports/routing/tritonRoute.klayout.xml --design-name adder"
+Fri Mar 26 12:34:28 UTC 2021 - Executing "python3 /openLANE_flow/scripts/tr2klayout.py -i /openLANE_flow/designs/adder/runs/opelane_run/reports/routing/tritonRoute.drc -o /openLANE_flow/designs/adder/runs/opelane_run/reports/routing/tritonRoute.klayout.xml --design-name adder"
 
-Sun Feb 28 17:10:15 UTC 2021 - Executing "python3 /openLANE_flow/scripts/spef_extractor/main.py -l /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged_unpadded.lef -d /openLANE_flow/designs/adder/runs/opelane_run/results/routing/adder.def -mw L -ec 1 |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/routing/spef_extraction.log"
+Fri Mar 26 12:34:28 UTC 2021 - Executing "python3 /openLANE_flow/scripts/spef_extractor/main.py -l /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged_unpadded.lef -d /openLANE_flow/designs/adder/runs/opelane_run/results/routing/adder.def -mw L -ec 1 |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/routing/spef_extraction.log"
 
-Sun Feb 28 17:10:16 UTC 2021 - Executing "sta /openLANE_flow/scripts/sta.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/synthesis/opensta_spef.log"
+Fri Mar 26 12:34:30 UTC 2021 - Executing "sta /openLANE_flow/scripts/sta.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/synthesis/opensta_spef.log"
 
-Sun Feb 28 17:10:19 UTC 2021 - Executing "python3 /openLANE_flow/scripts/write_powered_def.py -d /openLANE_flow/designs/adder/runs/opelane_run/results/routing/adder.def -l /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged.lef --power-port VPWR --ground-port VGND --powered-netlist {} -o /openLANE_flow/designs/adder/runs/opelane_run/tmp/routing/adder.powered.def |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/lvs/write_powered_verilog.log"
+Fri Mar 26 12:34:33 UTC 2021 - Executing "python3 /openLANE_flow/scripts/write_powered_def.py -d /openLANE_flow/designs/adder/runs/opelane_run/results/routing/adder.def -l /openLANE_flow/designs/adder/runs/opelane_run/tmp/merged.lef --power-port VPWR --ground-port VGND --powered-netlist {} -o /openLANE_flow/designs/adder/runs/opelane_run/tmp/routing/adder.powered.def |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/lvs/write_powered_verilog.log"
 
-Sun Feb 28 17:10:21 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/write_verilog.log"
+Fri Mar 26 12:34:33 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_write_verilog.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/write_verilog.log"
 
-Sun Feb 28 17:10:23 UTC 2021 - Executing "yosys -c /openLANE_flow/scripts/yosys_rewrite_verilog.tcl -l /openLANE_flow/designs/adder/runs/opelane_run/logs/synthesis/yosys_rewrite_verilog.log"
+Fri Mar 26 12:34:34 UTC 2021 - Executing "yosys -c /openLANE_flow/scripts/yosys_rewrite_verilog.tcl -l /openLANE_flow/designs/adder/runs/opelane_run/logs/synthesis/yosys_rewrite_verilog.log"
 
-Sun Feb 28 17:10:24 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/lvs\/adder.lvs.powered.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
+Fri Mar 26 12:34:36 UTC 2021 - Executing "sed -i -e {s/\(set ::env(CURRENT_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/lvs\/adder.lvs.powered.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
 
-Sun Feb 28 17:10:24 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/synthesis\/adder.synthesis_preroute.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
+Fri Mar 26 12:34:36 UTC 2021 - Executing "sed -i -e {s/\(set ::env(PREV_NETLIST)\).*/\1 \/openLANE_flow\/designs\/adder\/runs\/opelane_run\/results\/synthesis\/adder.synthesis_preroute.v/} /openLANE_flow/designs/adder/runs/opelane_run/config.tcl"
 
-Sun Feb 28 17:10:24 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /edatools/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/mag_gds.tcl </dev/null |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic.log"
+Fri Mar 26 12:34:36 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /edatools/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/mag_gds.tcl </dev/null |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic.log"
 
-Sun Feb 28 17:10:27 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /edatools/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/lef.tcl </dev/null |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic.lef.log"
+Fri Mar 26 12:34:37 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /edatools/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/lef.tcl </dev/null |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic.lef.log"
 
-Sun Feb 28 17:10:28 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /edatools/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/maglef.tcl </dev/null |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic.maglef.log"
+Fri Mar 26 12:34:38 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /edatools/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/maglef.tcl </dev/null |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic.maglef.log"
 
-Sun Feb 28 17:10:29 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /edatools/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/designs/adder/runs/opelane_run/tmp/magic_spice.tcl </dev/null |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic_spice.log"
+Fri Mar 26 12:34:39 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /edatools/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/designs/adder/runs/opelane_run/tmp/magic_spice.tcl </dev/null |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic_spice.log"
 
-Sun Feb 28 17:10:33 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /edatools/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/drc.tcl </dev/null |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic.drc.log"
+Fri Mar 26 12:34:41 UTC 2021 - Executing "magic -noconsole -dnull -rcfile /edatools/pdks/sky130A/libs.tech/magic/sky130A.magicrc /openLANE_flow/scripts/magic/drc.tcl </dev/null |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic.drc.log"
 
-Sun Feb 28 17:10:37 UTC 2021 - Executing "python3 /openLANE_flow/scripts/magic_drc_to_rdb.py --magic_drc_in /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic.drc --rdb_out /openLANE_flow/designs/adder/runs/opelane_run/results/magic/adder.drc.rdb"
+Fri Mar 26 12:34:45 UTC 2021 - Executing "python3 /openLANE_flow/scripts/magic_drc_to_rdb.py --magic_drc_in /openLANE_flow/designs/adder/runs/opelane_run/logs/magic/magic.drc --rdb_out /openLANE_flow/designs/adder/runs/opelane_run/results/magic/adder.drc.rdb"
 
-Sun Feb 28 17:10:37 UTC 2021 - Executing "netgen -batch lvs {/openLANE_flow/designs/adder/runs/opelane_run/results/magic/adder.spice adder} {/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v adder} /edatools/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.log -json |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/lvs/lvs.log"
+Fri Mar 26 12:34:45 UTC 2021 - Executing "netgen -batch lvs {/openLANE_flow/designs/adder/runs/opelane_run/results/magic/adder.spice adder} {/openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v adder} /edatools/pdks/sky130A/libs.tech/netgen/sky130A_setup.tcl /openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.log -json |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/lvs/lvs.log"
 
-Sun Feb 28 17:10:37 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_antenna_check.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/routing/or_antenna.log"
+Fri Mar 26 12:34:45 UTC 2021 - Executing "openroad -exit /openLANE_flow/scripts/openroad/or_antenna_check.tcl |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/routing/or_antenna.log"
 
-Sun Feb 28 17:10:39 UTC 2021 - Executing "awk { BEGIN {  # Print power and standard_input definitions
+Fri Mar 26 12:34:46 UTC 2021 - Executing "awk { BEGIN {  # Print power and standard_input definitions
     print "VPWR power 1.8";
     print "VGND power 0.0";
     print "#define std_input min@VGND max@VPWR";
@@ -102,7 +102,7 @@ $1 == "input" {  # Print input nets
     print $2, "input std_input";
 }} /openLANE_flow/designs/adder/runs/opelane_run/results/lvs/adder.lvs.powered.v > /openLANE_flow/designs/adder/runs/opelane_run/results/cvc/adder.power"
 
-Sun Feb 28 17:10:39 UTC 2021 - Executing "awk { /Black-box entry subcircuit/ {  # remove black-box defintions
+Fri Mar 26 12:34:46 UTC 2021 - Executing "awk { /Black-box entry subcircuit/ {  # remove black-box defintions
     while ( $1 != ".ends" ) {
         getline;
     }
@@ -119,7 +119,7 @@ Sun Feb 28 17:10:39 UTC 2021 - Executing "awk { /Black-box entry subcircuit/ {  
     print $0;
 }} /edatools/pdks/sky130A/libs.ref/sky130_fd_sc_hd/cdl/sky130_fd_sc_hd.cdl /openLANE_flow/designs/adder/runs/opelane_run/results/magic/adder.lef.spice > /openLANE_flow/designs/adder/runs/opelane_run/results/cvc/adder.cdl"
 
-Sun Feb 28 17:10:39 UTC 2021 - Executing "cvc /openLANE_flow/scripts/cvc/sky130A/cvcrc.sky130A |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/cvc/cvc_screen.log"
+Fri Mar 26 12:34:46 UTC 2021 - Executing "cvc /openLANE_flow/scripts/cvc/sky130A/cvcrc.sky130A |& tee /dev/null /openLANE_flow/designs/adder/runs/opelane_run/logs/cvc/cvc_screen.log"
 
-Sun Feb 28 17:10:39 UTC 2021 - Executing "python3 /openLANE_flow/report_generation_wrapper.py -d /openLANE_flow/designs/adder -dn adder -t opelane_run -o /openLANE_flow/designs/adder/runs/opelane_run/reports/final_summary_report.csv -m /openLANE_flow/designs/adder/runs/opelane_run/reports/manfucturability_report.rpt -r /openLANE_flow/designs/adder/runs/opelane_run"
+Fri Mar 26 12:34:47 UTC 2021 - Executing "python3 /openLANE_flow/report_generation_wrapper.py -d /openLANE_flow/designs/adder -dn adder -t opelane_run -o /openLANE_flow/designs/adder/runs/opelane_run/reports/final_summary_report.csv -m /openLANE_flow/designs/adder/runs/opelane_run/reports/manfucturability_report.rpt -r /openLANE_flow/designs/adder/runs/opelane_run"
 

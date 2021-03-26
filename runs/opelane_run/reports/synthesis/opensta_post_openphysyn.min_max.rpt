@@ -40,13 +40,13 @@ Path Type: max
    0.35    0.62 v _29_/X (sky130_fd_sc_hd__o22a_4)
    0.36    0.97 v _30_/X (sky130_fd_sc_hd__o22a_4)
    0.36    1.33 v _31_/X (sky130_fd_sc_hd__o22a_4)
-   0.36    1.70 v _35_/X (sky130_fd_sc_hd__o22a_4)
-   0.37    2.06 v _39_/X (sky130_fd_sc_hd__o22a_4)
-   0.37    2.43 v _43_/X (sky130_fd_sc_hd__o22a_4)
-   0.39    2.82 v _47_/X (sky130_fd_sc_hd__o22a_4)
-   0.44    3.26 v _50_/X (sky130_fd_sc_hd__a2bb2o_4)
-   0.00    3.26 v s[7] (out)
-           3.26   data arrival time
+   0.36    1.69 v _35_/X (sky130_fd_sc_hd__o22a_4)
+   0.36    2.05 v _39_/X (sky130_fd_sc_hd__o22a_4)
+   0.36    2.40 v _43_/X (sky130_fd_sc_hd__o22a_4)
+   0.39    2.79 v _47_/X (sky130_fd_sc_hd__o22a_4)
+   0.44    3.23 v _50_/X (sky130_fd_sc_hd__a2bb2o_4)
+   0.00    3.23 v s[7] (out)
+           3.23   data arrival time
 
    0.00    0.00   clock clk (rise edge)
    0.00    0.00   clock network delay (ideal)
@@ -55,8 +55,8 @@ Path Type: max
            0.00   data required time
 ---------------------------------------------------------
            0.00   data required time
-          -3.26   data arrival time
+          -3.23   data arrival time
 ---------------------------------------------------------
-          -3.26   slack (VIOLATED)
+          -3.23   slack (VIOLATED)
 
 

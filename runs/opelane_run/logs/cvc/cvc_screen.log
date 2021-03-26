@@ -2,7 +2,7 @@ CVC: Circuit Validation Check  Version 1.0.0
 CVC: Log output to /openLANE_flow/designs/adder/runs/opelane_run/results/cvc/cvc_adder.log
 CVC: Error output to /openLANE_flow/designs/adder/runs/opelane_run/results/cvc/cvc_adder.error.gz
 CVC: Debug output to /openLANE_flow/designs/adder/runs/opelane_run/results/cvc/cvc_adder.debug.gz
-CVC: Start: Sun Feb 28 17:10:39 2021
+CVC: Start: Fri Mar 26 12:34:47 2021
 
 Using the following parameters for CVC (Circuit Validation Check) from /openLANE_flow/scripts/cvc/sky130A/cvcrc.sky130A
 CVC_TOP = 'adder'
@@ -46,12 +46,12 @@ CVC: Reading device model settings...
 CVC: Reading power settings...
 CVC: Parsing netlist /openLANE_flow/designs/adder/runs/opelane_run/results/cvc/adder.cdl
 
-Cdl fixed data size 30249
-Usage CDL: Time: 0  Memory: 6836  I/O: 4272  Swap: 0
+Cdl fixed data size 30829
+Usage CDL: Time: 0  Memory: 7092  I/O: 8  Swap: 0
 CVC: Counting and linking...
 CVC: Assigning IDs ...
-Usage DB: Time: 0  Memory: 7092  I/O: 4272  Swap: 0
-CVC: 1009(1009) instances, 251(251) nets, 1954(1954) devices.
+Usage DB: Time: 0  Memory: 7348  I/O: 8  Swap: 0
+CVC: 1039(1039) instances, 257(257) nets, 1988(1988) devices.
 Setting power for mode...
 Setting models...
 CVC: Setting models ...
@@ -62,20 +62,20 @@ CVC: Shorting switches...
 Setting instance power...
 CVC: Linking devices...
 
-Usage EQUIV: Time: 0  Memory: 7604  I/O: 4336  Swap: 0
+Usage EQUIV: Time: 0  Memory: 7784  I/O: 16  Swap: 0
 Power nets 23
 CVC: Shorting non conducting resistors...
 CVC: Calculating resistor voltages...
-Usage RES: Time: 0  Memory: 7604  I/O: 4336  Swap: 0
+Usage RES: Time: 0  Memory: 7784  I/O: 16  Swap: 0
 Power nets 23
 CVC: Calculating min/max voltages...
-Processing trivial nets found 106 trivial nets
+Processing trivial nets found 112 trivial nets
 CVC: Ignoring invalid calculations...
 CVC:   Removed 0 calculations
 Copying master nets
 CVC: Ignoring non-conducting devices...
 CVC:   Ignored 0 devices
-Usage MIN/MAX1: Time: 0  Memory: 7604  I/O: 4336  Swap: 0
+Usage MIN/MAX1: Time: 0  Memory: 7784  I/O: 16  Swap: 0
 Power nets 102
 ! Checking forward bias diode errors: 
 
@@ -87,24 +87,24 @@ Power nets 102
 
 ! Checking pmos gate vs source errors: 
 
-Usage ERROR: Time: 0  Memory: 7604  I/O: 4336  Swap: 0
+Usage ERROR: Time: 0  Memory: 7784  I/O: 16  Swap: 0
 Saving min/max voltages...
 CVC: Propagating Simulation voltages 1...
-Usage SIM1: Time: 0  Memory: 7604  I/O: 4336  Swap: 0
+Usage SIM1: Time: 0  Memory: 7784  I/O: 16  Swap: 0
 Power nets 102
 Saving simulation voltages...
 CVC: Propagating Simulation voltages 3...
-Usage SIM2: Time: 0  Memory: 7604  I/O: 4336  Swap: 0
+Usage SIM2: Time: 0  Memory: 7784  I/O: 16  Swap: 0
 Power nets 102
 Added 0 latch voltages
 CVC: Calculating min/max voltages...
-Processing trivial nets found 106 trivial nets
+Processing trivial nets found 112 trivial nets
 CVC: Ignoring invalid calculations...
 CVC:   Removed 0 calculations
 Copying master nets
 CVC: Ignoring non-conducting devices...
 CVC:   Ignored 0 devices
-Usage MIN/MAX2: Time: 0  Memory: 7604  I/O: 4336  Swap: 0
+Usage MIN/MAX2: Time: 0  Memory: 7784  I/O: 16  Swap: 0
 Power nets 181
 ! Checking overvoltage errors
 
@@ -136,8 +136,8 @@ CVC: Overvoltage-VDS:       0
 CVC: Overvoltage-VGS:       0
 CVC: Unexpected voltage :   0
 CVC: Total:                 0
-Usage Total: Time: 0  Memory: 8216  I/O: 4368  Swap: 0
-Virtual net update/access 1765/123153
+Usage Total: Time: 0  Memory: 8272  I/O: 48  Swap: 0
+Virtual net update/access 1786/125355
 CVC: Log output to /openLANE_flow/designs/adder/runs/opelane_run/results/cvc/cvc_adder.log
-CVC: End: Sun Feb 28 17:10:39 2021
+CVC: End: Fri Mar 26 12:34:47 2021
 

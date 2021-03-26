@@ -11,30 +11,30 @@ Notice 0:
 Reading DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/placement/openphysyn.def
 Notice 0: Design: adder
 Notice 0:     Created 28 pins.
-Notice 0:     Created 280 components and 1067 component-terminals.
+Notice 0:     Created 283 components and 1085 component-terminals.
 Notice 0:     Created 2 special nets and 0 connections.
-Notice 0:     Created 87 nets and 219 connections.
+Notice 0:     Created 90 nets and 225 connections.
 Notice 0: Finished DEF file: /openLANE_flow/designs/adder/runs/opelane_run/tmp/placement/openphysyn.def
 Design Stats
 --------------------------------
-total instances           280
+total instances           283
 multi row instances         0
 fixed instances           210
-nets                       89
+nets                       92
 design area           10369.9 u^2
 fixed area              447.9 u^2
-movable area            713.2 u^2
+movable area            728.2 u^2
 utilization                 7 %
-utilization padded         14 %
+utilization padded         15 %
 rows                       37
 row height                2.7 u
 
 Placement Analysis
 --------------------------------
-total displacement      532.0 u
+total displacement      524.0 u
 average displacement      1.9 u
-max displacement         18.3 u
-original HPWL          1870.8 u
-legalized HPWL         2451.4 u
-delta HPWL                 31 %
+max displacement         18.1 u
+original HPWL          1849.2 u
+legalized HPWL         2643.4 u
+delta HPWL                 43 %
 

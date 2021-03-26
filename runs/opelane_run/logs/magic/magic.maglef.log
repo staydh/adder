@@ -12,5 +12,5 @@ Loading sky130A Device Generator Menu ...
 Loading "/openLANE_flow/scripts/magic/maglef.tcl" from command line.
 Reading LEF data from file /openLANE_flow/designs/adder/runs/opelane_run/results/magic/adder.lef.
 This action cannot be undone.
-LEF read: Processed 353 lines.
+LEF read: Processed 349 lines.
 [INFO]: DONE GENERATING MAGLEF VIEW
