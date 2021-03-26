@@ -10,6 +10,9 @@ set ::env(CLOCK_PORT) "clk"
 set ::env(CLOCK_TREE_SYNTH) 0
 # set ::env(PL_SKIP_INITIAL_PLACEMENT) 1
 
+# set ::env(FP_IO_MODE) 0
+set ::env(FP_PIN_ORDER_CFG) $::env(OPENLANE_ROOT)/designs/adder/pin_order.cfg
+
 set filename $::env(DESIGN_DIR)/$::env(PDK)_$::env(STD_CELL_LIBRARY)_config.tcl
 if { [file exists $filename] == 1} {
 	source $filename
