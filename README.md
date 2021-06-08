@@ -101,7 +101,7 @@ Devido a problemas durante a instalação do [ghdl-yosys-plugin](https://github.
 ```bash
 
 # Montar container
-$ docker run --rm -it ./src/vhdl:/home -w /home -u $(id -u $USER):$(id -g $USER) hdlc/ghdl:yosys sh
+$ docker run --rm -it -v $(pwd):/home -w /home -u $(id -u $USER):$(id -g $USER) hdlc/ghdl:yosys bash
 
 # Executar comandos dentro do container
 $ yosys -m ghdl -p 'ghdl ./full_adder.vhdl -e full_adder; write_verilog full_adder.v'
