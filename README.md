@@ -37,7 +37,7 @@ $ ghdl -a ./src/vhdl/full_adder.vhdl
 $ ghdl -a ./src/vhdl/adder.vhdl
 
 # Análise dos arquivos de testes
-$ ghdl -a ./src/vhdl/full_tb.vhdl
+$ ghdl -a ./src/vhdl/full_adder_tb.vhdl
 $ ghdl -a ./src/vhdl/adder_tb.vhdl
 
 # Elaboração de unidades de testes
@@ -99,6 +99,9 @@ $ yosys -m ghdl -p 'ghdl ./src/vhdl/adder.vhdl -e adder; write_verilog adder.v'
 Devido a problemas durante a instalação do [ghdl-yosys-plugin](https://github.com/ghdl/ghdl-yosys-plugin), a imagem [hdlc/ghdl:yosys](https://hub.docker.com/r/hdlc/ghdl/tags) e o [Docker](https://www.docker.com/) foram utilizados para a execução do procedimento acima.
 
 ```bash
+
+# Baixar imagem
+$ docker pull hdlc/ghdl:yosys
 
 # Montar container
 $ docker run --rm -it -v $(pwd):/home -w /home -u $(id -u $USER):$(id -g $USER) hdlc/ghdl:yosys bash
